@@ -26,7 +26,7 @@ public class Main {
         scanner.close();
     }
 
-    private static Map<String, Executor> init(AnimalMenuService animalMenuService){
+    private static Map<String, Executor> init(AnimalMenuService animalMenuService) {
         AnimalService animalService = new AnimalService(animalMenuService);
         return Map.of(
                 "leave", animalService.addAnimal(),
